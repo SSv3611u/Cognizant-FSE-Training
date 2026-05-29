@@ -1,0 +1,22 @@
+/* Event card box model */
+.eventCard {
+    border: 2px solid #222;
+    padding: 20px;
+    margin: 25px;
+}
+
+/* Selected field outline */
+.selectedField {
+    outline: 3px solid #ff9800;
+    padding: 6px;
+}
+
+/* Hidden keeps space */
+.hiddenBox {
+    visibility: hidden;
+}
+
+/* Display none removes space */
+.noneBox {
+    display: none;
+}

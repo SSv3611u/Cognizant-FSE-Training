@@ -1,0 +1,8 @@
+/* Newspaper style column layout */
+.news {
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid gray;
+    line-height: 1.6;
+    font-size: 18px;
+}

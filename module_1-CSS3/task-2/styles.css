@@ -1,0 +1,28 @@
+/* Basic page styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
+    color: #222;
+    margin: 20px;
+}
+
+/* Heading style */
+h1 {
+    color: #174ea6;
+    text-align: center;
+}
+
+/* Paragraph style */
+p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+/* Style for main CTA button */
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}

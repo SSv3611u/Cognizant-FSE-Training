@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>DevTools Debug Page</h2>
+
+    <p>Open Chrome DevTools and check Elements, Console and Network tabs.</p>
+
+    <section class="box">
+        <h3>Layout Test Box</h3>
+        <p>Resize the browser or use device toolbar to test the css.</p>
+    </section>
+
+    <button onclick="showLog()">Show Console Log</button>
+
+    <script>
+        console.log("debug page loaded");
+
+        function showLog() {
+            var width = window.innerWidth;
+            console.log("current width is " + width);
+            alert("Check console for screen width");
+        }
+    </script>
+</body>
+</html>

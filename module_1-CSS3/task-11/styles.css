@@ -1,0 +1,19 @@
+/* This css file is used to check loading in Network tab */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.box {
+    width: 70%;
+    padding: 20px;
+    border: 2px solid #333;
+    background-color: #f1f5f9;
+}
+
+@media screen and (max-width: 768px) {
+    .box {
+        width: 95%;
+        background-color: #ffe8cc;
+    }
+}

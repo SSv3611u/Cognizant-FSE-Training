@@ -1,0 +1,22 @@
+/* Body background with fallback color */
+body {
+    background-color: #dceeff;
+    background-image: url("https://www.transparenttextures.com/patterns/white-wall-3.png");
+    color: #222222;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+/* Section style using rgba */
+section {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Gradient heading */
+h2 {
+    background: linear-gradient(to right, #005baa, #00a6a6);
+    color: #ffffff;
+    padding: 10px;
+}

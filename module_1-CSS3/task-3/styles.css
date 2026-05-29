@@ -1,0 +1,38 @@
+/* Universal selector reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body style */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* ID selector for main banner */
+#mainHeader {
+    background-color: #0b5ed7;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Element selector for all h2 tags */
+h2 {
+    color: #0a3622;
+    margin-top: 20px;
+}
+
+/* Class selector for event containers */
+.eventCard {
+    border: 1px solid #777;
+    padding: 15px;
+    margin-top: 15px;
+}
+
+/* Grouping selector */
+h3,
+p {
+    margin-bottom: 10px;
+}

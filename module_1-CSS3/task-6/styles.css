@@ -1,0 +1,40 @@
+/* Navigation list */
+.navMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navMenu li {
+    display: inline-block;
+    margin-right: 15px;
+    padding: 8px;
+}
+
+/* Event list */
+.eventList {
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.eventList li {
+    padding: 6px;
+    margin: 4px;
+}
+
+/* Link states */
+a:link {
+    color: #005bbb;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: orange;
+}
+
+a:active {
+    color: red;
+}

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Page font */
+body {
+    font-family: "Roboto", Arial, sans-serif;
+    margin: 25px;
+}
+
+/* Main heading */
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Section headings */
+h2 {
+    font-size: 24px;
+    font-style: italic;
+    color: #204060;
+}
+
+/* Description text */
+.desc {
+    font-size: 17px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+    text-align: justify;
+}
