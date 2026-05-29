@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <rect width="440" height="280" fill="#caf0f8"/>
+  <rect y="205" width="440" height="75" fill="#495057"/>
+  <line x1="0" y1="240" x2="440" y2="240" stroke="#f8f9fa" stroke-width="6" stroke-dasharray="32 18"/>
+  <circle cx="145" cy="120" r="20" fill="#03045e"/>
+  <line x1="145" y1="140" x2="120" y2="190" stroke="#0077b6" stroke-width="12"/>
+  <line x1="135" y1="160" x2="180" y2="180" stroke="#0077b6" stroke-width="10"/>
+  <line x1="120" y1="190" x2="95" y2="225" stroke="#ef476f" stroke-width="10"/>
+  <line x1="120" y1="190" x2="165" y2="225" stroke="#ef476f" stroke-width="10"/>
+  <text x="220" y="42" font-family="Arial" font-size="24" text-anchor="middle" fill="#023e8a">Charity Run</text>
+</svg>

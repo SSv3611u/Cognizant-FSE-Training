@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+    <h2>Event Feedback</h2>
+
+    <form>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" placeholder="enter phone number" onblur="checkPhone()">
+        <span id="phoneMsg"></span>
+        <br><br>
+
+        <label for="eventType">Select Event:</label><br>
+        <select id="eventType" onchange="showFee()">
+            <option value="">--select--</option>
+            <option value="100">Community Cleanup</option>
+            <option value="250">Food Festival</option>
+            <option value="150">Art Workshop</option>
+            <option value="200">Health Camp</option>
+        </select>
+        <p>Event Fee: <span id="fee">Not selected</span></p>
+
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" rows="5" cols="40" placeholder="write feedback here" onkeyup="countChars()"></textarea>
+        <p>Characters: <span id="count">0</span></p>
+
+        <input type="button" value="Submit" onclick="submitForm()">
+    </form>
+
+    <p id="msg"></p>
+
+    <h3>Event Image</h3>
+    <p>Double click image to enlarge</p>
+    <img id="eventImg" src="../task-4/images/music-night.svg" alt="music event image" title="Music Night" width="220" height="140" ondblclick="bigImage()">
+
+    <script>
+        function checkPhone() {
+            var phone = document.getElementById("phone").value;
+
+            if (phone.length === 10 && !isNaN(phone)) {
+                document.getElementById("phoneMsg").innerHTML = "valid";
+            } else {
+                document.getElementById("phoneMsg").innerHTML = "enter valid 10 digit number";
+            }
+        }
+
+        function showFee() {
+            var amount = document.getElementById("eventType").value;
+            if (amount == "") {
+                document.getElementById("fee").innerHTML = "Not selected";
+            } else {
+                document.getElementById("fee").innerHTML = "Rs." + amount;
+            }
+        }
+
+        function submitForm() {
+            document.getElementById("msg").innerHTML = "Feedback submitted successfully";
+        }
+
+        function bigImage() {
+            document.getElementById("eventImg").width = 440;
+            document.getElementById("eventImg").height = 280;
+        }
+
+        function countChars() {
+            var text = document.getElementById("feedback").value;
+            document.getElementById("count").innerHTML = text.length;
+        }
+    </script>
+</body>
+</html>

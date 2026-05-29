@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <rect width="440" height="280" fill="#1d3557"/>
+  <circle cx="360" cy="55" r="28" fill="#f1fa8c"/>
+  <rect y="205" width="440" height="75" fill="#081c15"/>
+  <circle cx="150" cy="125" r="22" fill="#f8f9fa"/>
+  <rect x="140" y="145" width="20" height="65" fill="#e63946"/>
+  <line x1="205" y1="95" x2="205" y2="210" stroke="#f8f9fa" stroke-width="8"/>
+  <circle cx="205" cy="95" r="18" fill="#adb5bd"/>
+  <path d="M260 130 L330 105 L330 185 L260 165 Z" fill="#ffb703"/>
+  <text x="220" y="42" font-family="Arial" font-size="24" text-anchor="middle" fill="#f8f9fa">Music Night</text>
+</svg>

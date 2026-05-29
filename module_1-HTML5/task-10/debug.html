@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debugging Practice</title>
+</head>
+<body>
+    <h2>Debugging with Chrome DevTools</h2>
+
+    <p id="text">This text can be inspected and changed in DevTools.</p>
+
+    <button onclick="calculateTotal()">Calculate Total</button>
+    <button onclick="changeText()">Change Text</button>
+
+    <p id="result"></p>
+
+    <script>
+        console.log("page loaded");
+
+        function calculateTotal() {
+            var eventFee = 200;
+            var serviceCharge = 50;
+            var total = eventFee + serviceCharge;
+
+            console.log("event fee is " + eventFee);
+            console.log("service charge is " + serviceCharge);
+            console.log("total is " + total);
+
+            document.getElementById("result").innerHTML = "Total amount is Rs." + total;
+        }
+
+        function changeText() {
+            var message = "Text changed using JavaScript";
+            console.log(message);
+            document.getElementById("text").innerHTML = message;
+        }
+    </script>
+</body>
+</html>

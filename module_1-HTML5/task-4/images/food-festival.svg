@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <rect width="440" height="280" fill="#fff3b0"/>
+  <rect y="185" width="440" height="95" fill="#f4d35e"/>
+  <rect x="60" y="95" width="120" height="90" fill="#ee964b"/>
+  <polygon points="50,95 190,95 165,55 75,55" fill="#d62828"/>
+  <rect x="260" y="95" width="120" height="90" fill="#90be6d"/>
+  <polygon points="250,95 390,95 365,55 275,55" fill="#577590"/>
+  <circle cx="130" cy="215" r="24" fill="#bc6c25"/>
+  <circle cx="310" cy="215" r="24" fill="#6a994e"/>
+  <text x="220" y="42" font-family="Arial" font-size="24" text-anchor="middle" fill="#7f4f24">Food Festival</text>
+</svg>

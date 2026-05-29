@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Invite</title>
+</head>
+<body>
+    <h2>Event Video Invite</h2>
+
+    <p>Watch this small event promo video.</p>
+
+    <video width="420" height="250" controls oncanplay="videoReady()">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support video tag.
+    </video>
+
+    <p id="videoMsg"></p>
+
+    <h3>Quick Form</h3>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" placeholder="enter name" onkeyup="formChanged = true">
+        <br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="enter email" onkeyup="formChanged = true">
+        <br><br>
+
+        <input type="button" value="Submit" onclick="submitForm()">
+    </form>
+
+    <p id="formMsg"></p>
+
+    <script>
+        var formChanged = false;
+
+        function videoReady() {
+            document.getElementById("videoMsg").innerHTML = "Video ready to play";
+        }
+
+        function submitForm() {
+            formChanged = false;
+            document.getElementById("formMsg").innerHTML = "Form submitted";
+        }
+
+        window.onbeforeunload = function() {
+            if (formChanged) {
+                return "You have unfinished form details";
+            }
+        };
+    </script>
+</body>
+</html>

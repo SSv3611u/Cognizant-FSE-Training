@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="280" viewBox="0 0 440 280">
+  <rect width="440" height="280" fill="#e0fbfc"/>
+  <rect x="85" y="95" width="270" height="120" rx="12" fill="#ffffff" stroke="#3d5a80" stroke-width="6"/>
+  <rect x="200" y="115" width="40" height="80" fill="#e63946"/>
+  <rect x="180" y="135" width="80" height="40" fill="#e63946"/>
+  <circle cx="105" cy="220" r="18" fill="#293241"/>
+  <circle cx="335" cy="220" r="18" fill="#293241"/>
+  <text x="220" y="42" font-family="Arial" font-size="24" text-anchor="middle" fill="#293241">Health Camp</text>
+</svg>

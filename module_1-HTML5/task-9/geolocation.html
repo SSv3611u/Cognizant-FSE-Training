@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nearby Events</title>
+</head>
+<body>
+    <h2>Find Nearby Events</h2>
+
+    <button onclick="findEvents()">Find Nearby Events</button>
+
+    <p id="locationMsg"></p>
+
+    <script>
+        function findEvents() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition, showError, {
+                    enableHighAccuracy: true,
+                    timeout: 5000,
+                    maximumAge: 0
+                });
+            } else {
+                document.getElementById("locationMsg").innerHTML = "Geolocation not supported";
+            }
+        }
+
+        function showPosition(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+
+            document.getElementById("locationMsg").innerHTML =
+                "Latitude: " + lat + "<br>Longitude: " + lon;
+        }
+
+        function showError(error) {
+            if (error.code == error.PERMISSION_DENIED) {
+                document.getElementById("locationMsg").innerHTML = "Permission denied";
+            } else if (error.code == error.TIMEOUT) {
+                document.getElementById("locationMsg").innerHTML = "Request timed out";
+            } else {
+                document.getElementById("locationMsg").innerHTML = "Unable to get location";
+            }
+        }
+    </script>
+</body>
+</html>
