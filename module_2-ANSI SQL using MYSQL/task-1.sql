@@ -1,0 +1,1 @@
+select * from events where status="upcoming" order by start_date;

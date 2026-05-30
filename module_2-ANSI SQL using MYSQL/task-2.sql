@@ -1,0 +1,1 @@
+select event_id, avg(rating) as avg_rating from feedback group by event_id having count(feedback_id)>10; 
