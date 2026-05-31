@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="180" viewBox="0 0 300 180">
+  <rect width="300" height="180" fill="#fef3c7"/>
+  <rect x="55" y="65" width="190" height="85" fill="#fb923c"/>
+  <polygon points="45,65 255,65 225,30 75,30" fill="#ea580c"/>
+  <text x="150" y="115" font-family="Arial" font-size="22" text-anchor="middle" fill="#111827">Event</text>
+</svg>

@@ -1,0 +1,16 @@
+/* Run npm install and npm run build in this folder to compile Sass.
+   This fallback keeps the sample readable before compiling. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.btn-primary {
+    background-color: #7b2cbf;
+    border-color: #7b2cbf;
+}
+
+.card {
+    border-radius: 1rem;
+    border: 1px solid #ddd;
+}

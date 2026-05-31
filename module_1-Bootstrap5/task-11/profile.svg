@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="180" viewBox="0 0 300 180">
+  <rect width="300" height="180" fill="#dbeafe"/>
+  <circle cx="150" cy="65" r="35" fill="#2563eb"/>
+  <rect x="85" y="115" width="130" height="45" rx="20" fill="#1e40af"/>
+  <text x="150" y="170" font-family="Arial" font-size="16" text-anchor="middle" fill="#111827">Event Profile</text>
+</svg>

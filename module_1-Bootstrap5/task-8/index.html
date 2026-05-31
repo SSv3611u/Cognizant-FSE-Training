@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Forms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container py-4">
+        <h1>Registration Form</h1>
+        <form class="mb-5">
+            <div class="mb-3">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control" type="text" id="name" placeholder="enter name">
+            </div>
+            <div class="mb-3 input-group">
+                <span class="input-group-text">@</span>
+                <input class="form-control" type="email" placeholder="email address">
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="agree">
+                <label class="form-check-label" for="agree">I agree to join the event</label>
+            </div>
+            <button class="btn btn-primary" type="button">Register</button>
+        </form>
+
+        <h2>Login Form</h2>
+        <form>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="loginEmail" placeholder="name@example.com">
+                <label for="loginEmail">Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="loginPassword" placeholder="password">
+                <label for="loginPassword">Password</label>
+            </div>
+            <button class="btn btn-success" type="button">Login</button>
+        </form>
+    </div>
+</body>
+</html>
