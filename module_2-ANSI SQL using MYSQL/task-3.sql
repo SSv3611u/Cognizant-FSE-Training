@@ -1,6 +1,12 @@
-select * from users u
-where not exists (
-	select 1 from registrations r
-    where r.user_id = u.user_id
-    and r.registration_date >= curdate() - interval 90 day
+SELECT
+  u.user_id,
+  u.full_name,
+  u.email,
+  u.city
+FROM users u
+WHERE NOT EXISTS (
+  SELECT 1
+  FROM registrations r
+  WHERE r.user_id = u.user_id
+    AND r.registration_date >= CURRENT_DATE - INTERVAL 90 DAY
 );

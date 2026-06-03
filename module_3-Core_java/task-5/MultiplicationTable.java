@@ -1,12 +1,18 @@
 import java.util.Scanner;
 
-class MultiplicationTable{
-    void main(){
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        System.out.println("Multiplication table for "+a);
-        for(int i=1;i<=10;i++){
-            System.out.println(a+" x "+i+" = "+(a*i));
+class MultiplicationTable {
+    private static void printTable(int number) {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(number + " x " + i + " = " + (number * i));
         }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+
+        printTable(number);
     }
 }

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangle to Circle Animation</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f4f7fb;
+            font-family: Arial, sans-serif;
+        }
+
+        .track {
+            width: 420px;
+            height: 260px;
+            border: 3px solid #334155;
+            position: relative;
+        }
+
+        .shape {
+            width: 120px;
+            height: 70px;
+            background-color: #2563eb;
+            border-radius: 8px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            animation: rectangleMove 5s infinite linear;
+        }
+
+        @keyframes rectangleMove {
+            0% {
+                top: 0;
+                left: 0;
+                width: 120px;
+                height: 70px;
+                border-radius: 8px;
+                background-color: #2563eb;
+            }
+
+            25% {
+                top: 0;
+                left: 300px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #16a34a;
+            }
+
+            50% {
+                top: 180px;
+                left: 300px;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #16a34a;
+            }
+
+            75% {
+                top: 180px;
+                left: 0;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                background-color: #16a34a;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                width: 120px;
+                height: 70px;
+                border-radius: 8px;
+                background-color: #2563eb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="track">
+        <div class="shape"></div>
+    </div>
+</body>
+</html>

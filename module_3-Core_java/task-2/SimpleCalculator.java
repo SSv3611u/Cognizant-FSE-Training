@@ -1,32 +1,41 @@
-import java.util.*;
-class SimpleCalculator {
-    void main() {
-        Scanner sc= new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        String op = sc.next();
-        sc.nextLine();
-        switch (op) {
-            case "+":
-                System.out.println("sum of "+a+" and "+b+" is "+(a+b));
-                break;
-            case "-":
-                System.out.println("difference of "+a+" and "+b+" is "+(a-b));
-                break;
-            case "*":
-                System.out.println("product of "+a+" and "+b+" is "+(a*b));
-                break;
-            case "/":
-                if(b == 0){
-                    System.out.println("division cannot be performed");
-                }else{
-                    System.out.println("division of "+a+" and "+b+" is "+(a/b));  
-                }
-                break;
-            default:
-                System.out.println("choose or enter the correct operand");
-                break;
-        }
+import java.util.Scanner;
 
+class SimpleCalculator {
+    private static double calculate(double first, double second, char operator) {
+        switch (operator) {
+            case '+':
+                return first + second;
+            case '-':
+                return first - second;
+            case '*':
+                return first * second;
+            case '/':
+                if (second == 0) {
+                    throw new ArithmeticException("Division by zero is not allowed.");
+                }
+                return first / second;
+            default:
+                throw new IllegalArgumentException("Unsupported operator.");
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter first number: ");
+        double first = scanner.nextDouble();
+
+        System.out.print("Enter second number: ");
+        double second = scanner.nextDouble();
+
+        System.out.print("Choose operation (+, -, *, /): ");
+        char operator = scanner.next().charAt(0);
+
+        try {
+            double result = calculate(first, second, operator);
+            System.out.println("Result: " + result);
+        } catch (ArithmeticException | IllegalArgumentException ex) {
+            System.out.println(ex.getMessage());
+        }
     }
 }

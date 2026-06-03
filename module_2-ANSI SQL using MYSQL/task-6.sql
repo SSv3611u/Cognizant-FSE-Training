@@ -1,7 +1,11 @@
-select e.event_id,
-count(case when r.resource_type = 'pdf' then 1 end) as total_pdfs,
-count(case when r.resource_type = 'image' then 1 end) as total_images,
-count(case when r.resource_type = 'link' then 1 end) as total_links
-from events e
-left join resources r on e.event_id = r.event_id
-group by e.event_id;
+SELECT
+  e.event_id,
+  e.title,
+  SUM(CASE WHEN r.resource_type = 'pdf' THEN 1 ELSE 0 END) AS pdf_count,
+  SUM(CASE WHEN r.resource_type = 'image' THEN 1 ELSE 0 END) AS image_count,
+  SUM(CASE WHEN r.resource_type = 'link' THEN 1 ELSE 0 END) AS link_count,
+  COUNT(r.resource_id) AS total_resources
+FROM events e
+LEFT JOIN resources r ON r.event_id = e.event_id
+GROUP BY e.event_id, e.title
+ORDER BY e.title;

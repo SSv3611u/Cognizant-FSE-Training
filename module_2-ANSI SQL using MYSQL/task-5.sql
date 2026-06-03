@@ -1,8 +1,8 @@
-SELECT 
-    u.city,
-    COUNT(DISTINCT r.user_id) AS total_users
-FROM users u
-JOIN registrations r ON u.user_id = r.user_id
-GROUP BY u.city
-ORDER BY total_users DESC
+SELECT
+  e.city,
+  COUNT(DISTINCT r.user_id) AS registered_users
+FROM events e
+JOIN registrations r ON r.event_id = e.event_id
+GROUP BY e.city
+ORDER BY registered_users DESC, e.city
 LIMIT 5;

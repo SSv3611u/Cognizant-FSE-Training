@@ -1,15 +1,15 @@
-class DataTypes{
-    void main(){
-        int a = 10;
-        float b = 10f;
-        double c = 10.0;
-        char d = 'a';
-        boolean f = true;
+class DataTypes {
+    public static void main(String[] args) {
+        int employeeId = 101;
+        float temperature = 36.6f;
+        double salary = 45250.75;
+        char grade = 'A';
+        boolean isActive = true;
 
-        System.out.println("Integer: "+a);
-        System.out.println("Floating number: "+b);
-        System.out.println("Double: "+c);
-        System.out.println("Character: "+d);
-        System.out.println("Boolean: "+f);
+        System.out.println("Integer value: " + employeeId);
+        System.out.println("Float value: " + temperature);
+        System.out.println("Double value: " + salary);
+        System.out.println("Character value: " + grade);
+        System.out.println("Boolean value: " + isActive);
     }
 }
